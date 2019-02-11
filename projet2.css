@@ -1,0 +1,315 @@
+html	{	
+	padding:0;
+	margin:0;	
+}
+
+body    {
+	background-image: url(images/background.jpg);
+	width: 100%;
+	height:  100%;
+}
+
+header  {
+    background-color: white;
+    background-image: url(images/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20em 9.5em;
+    border-bottom: solid 1px white;
+    border-radius: 1em 1em 0 0; 
+    padding: 5em 0;
+    text-align: center;
+}
+
+main	{
+    border-radius: 0 0 1em 1em;
+    margin: 0% 2% 2% 2%;
+	padding-bottom: 5%;
+}
+
+nav		{
+    background-color: black;
+    text-align: center;
+}
+nav, a	{
+    color: white;
+    font-size: 105%;
+    padding: 1em 2em;
+    text-decoration: none;
+	line-height: 1.6;
+}
+nav, a:visited      {
+    color: white;
+}
+nav, a:hover        {
+    color: white;
+}
+
+
+figure	{	
+	display: inline-block;	
+}
+
+table	{	
+	margin: 1.25em auto 0em;
+	width: 90%;
+	height: 200px;
+	border: 2px solid gray;
+	border-collapse: collapse;
+}
+
+td, th	{	
+	border: 2px solid gray;
+	padding: 0.25em;
+	text-align: center;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;	
+}
+
+form	{ 
+    padding: 1em;
+    min-width: 40em;
+	padding-left: 0;
+}
+
+input, textarea{
+    border: ridge 0.1em gray;
+    border-radius: 0.5em;
+    display: block;
+    padding: 0.25em;
+    width: 20em;
+}
+
+label	{ 
+    float: left;
+    padding-right: 2em;
+    text-align: left;
+    width: 11em;
+}
+
+#contenu{
+	width: 80%;
+	margin: auto;
+	margin-top: 3em;
+    background-color: white;
+    border-radius: 1em;  
+    box-shadow: 0.25em 0.2em 0.5em 0em #444444;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	overflow-y: auto;   
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fadetoggle{
+    display: none;
+}
+
+.price	{
+    font-weight: bold;
+}
+
+
+#accImg	{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#accCap	{	
+	font-family: Georgia, Helvetica, Montserrat;
+	font-size: 3em;	
+}
+
+#accNav	{	
+	margin: 0;
+	padding:0;
+	color: black;
+	text-decoration: underline;
+	font-weight: normal;	
+}
+
+
+.gallery{	
+	width: 350px;
+	height: 350px;	
+}
+
+
+#information{ 
+    border: solid 0.1em black;
+    float: right;
+    font-size: small;
+    margin-right: 45em;
+    padding: 0.1em;
+    width: 15em;
+}
+
+#order	{	
+	width: 250px;	
+}
+
+#address{
+	width: 250px;
+}
+
+.cbox	{
+	width: 10%;
+	float: left;
+	text-align: center;
+	line-height: 2em;
+}
+
+checkbox.input{	
+	margin: 10px;	
+}
+
+.quant	{
+	display:inline;
+	width: 25px;
+	height: 8px;
+	float: right;
+	line-height:0;
+}
+
+#navigation2{
+    border-top: solid 1px white;
+    font-size: 80%;
+    padding: 0 1em;
+}
+
+.center	{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fadetoggle{
+    display: none;
+}
+
+h3	{
+	margin:0;
+	padding:0;
+}
+
+#soldes	{	
+	font-weight: normal;
+	padding-top: 3em;
+	padding-left: 1.5em;	
+}
+
+#email	{	
+	color: blue;
+	margin: 0;
+	padding: 0;	
+}
+
+.comp	{	
+	color: #920000;	
+}
+
+.design {	
+	color: #920000;	
+}
+
+.comp:visited{
+	color: #920000;
+}
+
+.comp:hover{
+	color: black;
+}
+
+.texte	{
+    border: solid 1em #cccccc;
+    padding: 1em;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	
+	body{
+		margin: 0;
+		padding: 0;
+		border-radius: 0;	
+		background-image: none;		
+	}
+	
+	#contenu{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		border-radius: 0;	
+		height: 100%;
+		width: 100%;
+	}
+	main	{
+		margin: 0;
+		padding: 0;
+		border-radius: 0;
+	}
+	
+	#accCap	{
+		padding-left: 1em;
+	}
+	
+	.titre	{
+		padding-left: 1em;
+	}
+	
+	.formDiv{
+		padding-left: 1em;
+	}
+		
+}
+
+@media (max-width: 768px){
+	
+	body	{
+		margin: 0;
+		padding: 0;
+		border-radius: 0;	
+		background-image: none;				
+	}
+	
+	#contenu{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		border-radius: 0;	
+		height: 100%;
+		width: 100%;
+	}
+	
+	main	{
+		margin: 0;
+		padding: 0;
+		border-radius: 0;
+	}
+	
+	#accCap	{
+		padding-left: 1em;
+	}
+	
+	#accImg			{
+		max-width: 100%;
+		max-height: 100%;
+	}
+	.gallery	{	
+		max-width: 100%;
+		max-height: 100%;	
+	}
+	
+	.titre	{
+		padding-left: 1em;
+	}
+	
+	.formDiv{
+		padding-left: 1em;
+	}
+		
+}
+
+/* Guilhem Robert--Apesteguy et Mohamed Elayat */

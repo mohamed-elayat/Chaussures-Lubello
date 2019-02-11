@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Commander </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="projet2.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="projet2.js"></script>    
+</head>
+
+<body>
+
+    <div id="contenu" class = "facetoggle">
+
+        <header></header>
+
+        <nav>
+            <a href="index.html">ACCUEIL</a> |
+            <a href="chaussures.html">NOS CHAUSSURES</a> |
+            <a href="design.html">DESIGN</a> |
+            <a href="commander.html">COMMANDER</a> |
+            <a href="a_propos.html">À PROPOS</a>
+        </nav>
+		
+		<main>
+
+            <h1 class="titre fadetoggle"> COMMANDEZ EN LIGNE </h1>
+            
+            <br>
+			
+			<div class = "fadetoggle formDiv">
+
+            <p>Les informations marquées avec un astérisque (*) sont obligatoires. Le paiement s'effectue à la porte.</p>
+
+            <form method="POST" action="http://www-etud.iro.umontreal.ca/~chartral/ift1005/form_print.php">
+
+                <label> * Prénom: </label>
+                <input type = "text" name="prénom" id = "monPrenom" pattern="[A-Za-z]{1,}" required> <br>
+            
+                <label> * Nom: </label>
+                <input type="text" name="nom" id="monNom" pattern="[A-Za-z]{1,}" required> <br>
+
+                <label> * Email: </label>
+                <input type="email" name="email" id="monEmail" required> <br>
+				
+				<div id = "order">
+
+                <label> * Article(s) et quantité: </label>
+				<br> <br>
+				
+				<input type = "checkbox" name = "c1" value = "Black" class = "cbox"> Black
+				<input type="number" name="quantity" min="1" max="10" class = "quant"> <br>
+				
+				<input type = "checkbox" name = "c2" value = "Chamois" class = "cbox"> Chamois
+				<input type="number" name="quantity" min="1" max="10" class = "quant"> <br>
+				
+				<input type = "checkbox" name = "c3" value = "Grise" class = "cbox"> Grise
+				<input type="number" name="quantity" min="1" max="10" class = "quant"> <br>
+				
+				<input type = "checkbox" name = "c4" value = "Léopard" class = "cbox"> Léopard
+				<input type="number" name="quantity" min="1" max="10" class = "quant"> <br>
+				
+				<input type = "checkbox" name = "c5" value = "Marine" class = "cbox"> Marine
+				<input type="number" name="quantity" min="1" max="10" class = "quant"> <br>
+				
+				<input type = "checkbox" name = "c6" value = "Perle" class = "cbox"> Perle
+				<input type="number" name="quantity" min="1" max="10" class = "quant"> <br>
+				
+				<input type = "checkbox" name = "c8" value = "Dangereuse" class = "cbox"> Dangereuse
+				<input type="number" name="quantity" min="1" max="10" class = "quant"> <br>
+				
+				<input type = "checkbox" name = "c7" value = "Sabrinah" class = "cbox"> Sabrinah 
+				<input type="number" name="quantity" min="1" max="10" class = "quant"> <br> <br>
+				
+				</div>
+				
+                <label> * Adresse de livraison: </label>			
+                <input type="text" name="adresse" id="monAdresse" required> <br>
+				
+				<div id = "address">
+                <label> * Type de livraison: </label> <br><br>
+                <input type="radio" name="livraison" class = "cbox" value="normale" required checked=""> Normale <br>
+                <input type="radio" name="livraison" class = "cbox" value="express" required> Express <br> <br>
+				</div>
+
+                <label> Téléphone: </label>
+                <input type="tel" name="tel" id="monTel" pattern="[0-9]{10}"> <br>
+
+                <label> Informations utiles à signaler: </label>
+                <textarea name="commentaires" id="mesCommentaires" rows="2" cols="20"></textarea> <br>
+                
+                <input type="submit" id="mySubmit" value="Soumettre">
+
+            </form>
+			
+            <table>
+                <tr>
+                    <th>Type de livraison</th>
+					<th>Prix de la livraison</th>
+					<th>Délai de livraison</th>
+                </tr>
+                <tr>
+					<td>Livraison normale</td>
+                    <td>+15$ sur votre commande</td>
+					<td> 10-15 jours ouvrables</td>
+                        
+                </tr>
+                <tr>
+					<td>Livraison express</td>
+                    <td>+30$ sur votre commande</td>
+                    <td> 3-5 jours ouvrables </td>
+                </tr>
+            </table>	
+
+			</div>
+                     
+        </main>
+
+    </div>
+
+</body>
+
+</html>
+
+<!-- Guilhem Robert--Apesteguy et Mohamed Elayat-->
